@@ -9,15 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Site Metas -->
-    <title>농장물 이력 관리 앱</title>
+    <title>Forest Time - Stylish Magazine Blog Template</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="css/document-registry.css" />
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/sha256.min.js"></script>
-    <script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
-    <script src="js/argiculture.js"></script>
     
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -51,81 +46,6 @@
 
 </head>
 <body>
-    <header id="menu">
-        <a href="#" id="linkHome">Home</a>
-        <a href="#" id="linkSubmitDocument">농작물 이력 등록</a>
-        <a href="#" id="linkVerifyDocument">농작물 이력 검증</a>
-    </header>
-
-    <main>
-        <section id="loadingBox">Loading ...</section>
-
-        <section id="infoBox"><header>x</header><p>Info</p></section>
-
-        <section id="errorBox"><header>x</header><p>Error</p></section>
-
-      
-
-        <section id="viewHome">
-            <h1>Agriculture DApp with MetaMask</h1>
-            Welcome to the "Agriculture DApp with MetaMask" DApp. This
-            decentralized app runs on the Etherereum blockchain network and
-            holds a registry of items in a Solidity smart contract.
-            <ul>
-                <li>농장물 이력관리를 확인 할 수 있습니다.</li>
-                <li><b>사용자는</b> 농장물 이력을 등록할 수 있습니다.</li>
-                <li>
-                    Contract <b>address</b> (at Ropsten testnet):
-                    <a href="#" id="contractLink" target="_blank"></a>
-                </li>
-            </ul>
-        </section>
-
-        <section id="viewSubmitDocument">
-            <h1>농작물 이력관리 등록</h1>
-            <p>농작물을 등록해 주세요. 수량, 품명, 지역을 입력해 주시면 됩니다.</p>
-
-                <label>수량:
-                    <input type="text" id="pronumber" name="pronumber" value="10" placeholder="1 many..">
-                </label>
-                <br>
-                <label>품명:
-                    <input type="text" id="proname" name="proname" value="감귤" placeholder="What is ..">
-                </label>
-                <br>
-                <label>지역:
-                    <input type="text" id="proloc" name="proloc" value="제주" placeholder="Where is ..">
-                </label>
-                <br>
-                <label>제출:
-                    <input type="button" id="itemUploadButton" value="submit">
-                </label>
-
-                <br>
-                <br>
-                <br>
-
-                <div>
-                    <input type="button" id="showTableButton" value="List Show" />
-                </div>
-                <br>
-
-               
-                <div id="myTable"></div>
-
-               
-            
-        </section>
-
-        <section id="viewVerifyDocument">
-            <h1>Verify a Document</h1>
-            <p>Blockchain users can verify documents by checking whether they exist in the "Document Registry" smart contract on the Ethereum blockchain decentralized network.</p>
-            <!-- <input type="file" id="documentToVerify" /><br/> -->
-            <input type="button" id="documentVerifyButton" value="Submit" />
-        </section>
-    </main>
-    
-    <footer><a href="https://github.com/sotolab/nodeRopstenMetamskDocumentRegistry">Argiculture Registry</a> - Copyright &copy; SotoLAB, Since 2015</footer>
 
     <div id="wrapper">
         <div class="collapse top-search" id="collapseExample">
@@ -210,59 +130,22 @@
             </div><!-- end container -->
         </header><!-- end header -->
 
-        <section class="section first-section">
-            <div class="container-fluid">
-                <div class="masonry-blog clearfix">
-                    <div class="left-side">
-                        <div class="masonry-box post-media">
-                             <img src="upload/garden_cat_01.jpg" alt="" class="img-fluid">
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-aqua"><a href="blog-category-01.html" title="">Gardening</a></span>
-                                        <h4><a href="garden-single.html" title="">How to choose high quality soil for your gardens</a></h4>
-                                        <small><a href="garden-single.html" title="">21 July, 2017</a></small>
-                                        <small><a href="#" title="">by Amanda</a></small>
-                                    </div><!-- end meta -->
-                                </div><!-- end shadow-desc -->
-                            </div><!-- end shadow -->
-                        </div><!-- end post-media -->
-                    </div><!-- end left-side -->
-
-                    <div class="center-side">
-                        <div class="masonry-box post-media">
-                             <img src="upload/garden_cat_02.jpg" alt="" class="img-fluid">
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-aqua"><a href="blog-category-01.html" title="">Outdoor</a></span>
-                                        <h4><a href="garden-single.html" title="">You can create a garden with furniture in your home</a></h4>
-                                        <small><a href="garden-single.html" title="">19 July, 2017</a></small>
-                                        <small><a href="#" title="">by Amanda</a></small>
-                                    </div><!-- end meta -->
-                                </div><!-- end shadow-desc -->
-                            </div><!-- end shadow -->
-                        </div><!-- end post-media -->
-                    </div><!-- end left-side -->
-
-                    <div class="right-side hidden-md-down">
-                        <div class="masonry-box post-media">
-                             <img src="upload/garden_cat_03.jpg" alt="" class="img-fluid">
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-aqua"><a href="blog-category-01.html" title="">Indoor</a></span>
-                                        <h4><a href="garden-single.html" title="">The success of the 10 companies in the vegetable sector</a></h4>
-                                        <small><a href="garden-single.html" title="">03 July, 2017</a></small>
-                                        <small><a href="#" title="">by Jessica</a></small>
-                                    </div><!-- end meta -->
-                                </div><!-- end shadow-desc -->
-                             </div><!-- end shadow -->
-                        </div><!-- end post-media -->
-                    </div><!-- end right-side -->
-                </div><!-- end masonry -->
-            </div>
-        </section>
+        <div class="page-title wb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <h2><i class="fa fa-leaf bg-green"></i> Category by: Gardening</h2>
+                    </div><!-- end col -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                            <li class="breadcrumb-item active">Gardening</li>
+                        </ol>
+                    </div><!-- end col -->                    
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end page-title -->
 
         <section class="section wb">
             <div class="container">
@@ -589,7 +472,6 @@
                         </div><!-- end widget -->
                     </div><!-- end col -->
                 </div>
-
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <br>
